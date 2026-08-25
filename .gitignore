@@ -1,0 +1,6 @@
+@"
+archive/
+data/ratings.csv
+data/movies_features.csv
+data/master_movies.csv
+"@ | Out-File -Encoding utf8 .gitignore

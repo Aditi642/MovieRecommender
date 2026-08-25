@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Recommendation System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header class="header">
+
+        <div class="logo"
+            style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; font-size: 24px; color: white;">
+            <span class="logo-icon" style="font-size: 28px;">🎞️</span>
+            <span>CineMatch</span>
+        </div>
+
+
+        <div class="header-subtitle">
+            Movie Recommendation System
+        </div>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- MAIN -->
+    <!-- ============================= -->
+
+    <main class="container">
+
+        <!-- Hero section -->
+
+        <section class="hero">
+
+            <h1>
+                Discover your next
+                <span>favorite movie.</span>
+            </h1>
+
+            <p>
+                Personalized recommendations powered by
+                collaborative filtering, content similarity,
+                and movie quality.
+            </p>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- USER SEARCH -->
+        <!-- ============================= -->
+
+        <section class="control-card">
+
+            <div class="input-group">
+
+                <label for="userId">
+                    User ID
+                </label>
+
+                <input type="number" id="userId" value="1" min="1" placeholder="Enter User ID">
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="numberOfMovies">
+                    Number of movies
+                </label>
+
+                <select id="numberOfMovies">
+
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+
+                </select>
+
+            </div>
+
+
+            <button id="recommendButton" onclick="getRecommendations()">
+                <span id="buttonText">
+                    Get Recommendations
+                </span>
+
+                <span id="loadingSpinner" class="spinner hidden"></span>
+
+            </button>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- ERROR -->
+        <!-- ============================= -->
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+
+        <!-- ============================= -->
+        <!-- RESULTS -->
+        <!-- ============================= -->
+
+        <section id="resultsSection" class="results-section hidden">
+
+            <div class="results-header">
+
+                <div>
+
+                    <h2>
+                        Recommended for you
+                    </h2>
+
+                    <p id="resultsSubtitle">
+                        Personalized movie recommendations
+                    </p>
+
+                </div>
+
+                <div class="user-badge">
+                    User <span id="displayUserId">1</span>
+                </div>
+
+            </div>
+
+
+            <div id="recommendationGrid" class="recommendation-grid"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- EMPTY STATE -->
+        <!-- ============================= -->
+
+        <section id="emptyState" class="empty-state">
+
+            <div class="empty-icon">
+                🍿
+            </div>
+
+            <h2>
+                Ready to discover something?
+            </h2>
+
+            <p>
+                Enter a User ID and click
+                <strong>Get Recommendations</strong>.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer class="footer">
+
+        <p>
+            Movie Recommendation System
+        </p>
+
+        <p>
+            Content + Collaborative Filtering + Quality
+        </p>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
