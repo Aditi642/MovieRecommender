@@ -1,0 +1,16 @@
+@"
+archive/
+data/ratings.csv
+data/movies_features.csv
+data/master_movies.csv
+"@ | Out-File -Encoding utf8 .gitignore
+
+
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+.idea/
