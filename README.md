@@ -1,4 +1,4 @@
-# 🎬 CineMatch (formerly MovieRec)
+# 🎬 CineMatch 
 
 A sleek, user-friendly movie recommendation application designed to help users discover their next favorite film or TV show based on genres, moods, and real-time streaming availability.
 
@@ -85,5 +85,4 @@ CineMatch is built using a modern decoupled tier-based architecture to ensure fa
 
 ---
 
-## 📝 License
-Distributed under the MIT License. See `LICENSE` for more information.
+
